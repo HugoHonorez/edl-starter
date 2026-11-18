@@ -33,3 +33,11 @@ export function completionRate(tasks: HasStatus[]): number {
   const done = countByStatus(tasks).done;
   return Math.round((done / tasks.length) * 100);
 }
+
+// Garde seulement les tâches qui ont le statut demandé.
+// Exemple : filterByStatus([{ status: 'todo' }, { status: 'done' }], 'done')
+//           → [{ status: 'done' }]
+// Générique : si on lui passe des Task complètes, elle renvoie des Task complètes.
+export function filterByStatus<T extends HasStatus>(tasks: T[], status: TaskStatus): T[] {
+  return tasks.filter((task) => task.status === status);
+}

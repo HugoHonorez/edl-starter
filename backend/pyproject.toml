@@ -50,4 +50,5 @@ exclude_lines = [
     "if settings.DEBUG",
     "raise AssertionError",
     "raise NotImplementedError",
+    "if __name__ == .__main__.:",  # lancement manuel du serveur, pas testable
 ]
