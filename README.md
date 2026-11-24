@@ -1,6 +1,5 @@
 # TaskFlow API
-![CI Pipeline](https://github.com/HugoHonorez/edl-starter/actions/workflows/ci-
-pipeline.yml/badge.svg)
+![CI Pipeline](https://github.com/HugoHonorez/edl-starter/actions/workflows/ci-pipeline.yml/badge.svg)
 
 # 🚀 EDL Starter - Code de Démarrage
 
